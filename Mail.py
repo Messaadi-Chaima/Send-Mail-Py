@@ -1,10 +1,8 @@
-# coding: utf-8
 import yagmail
 
 # Adresse email et mot de passe d'application
 email_user = "messaadichaimamanel@gmail.com"
-app_password = "xtfm gmhx ghug ggyh"  # Remplace avec ton vrai mot de passe d'application (sans espaces)
-
+app_password = "xtfm gmhx ghug ggyh"  
 try:
     # Créer un objet SMTP avec mot de passe direct
     yag = yagmail.SMTP(user=email_user, password=app_password)
@@ -12,7 +10,7 @@ try:
     # Informations du mail
     destinataire = "messaadichaima21@gmail.com"
     sujet = "Le sujet de mon mail"
-    message = "Bonjour ! Ceci est un test envoyé avec yagmail sans keyring."
+    message = "Bonjour ! Ceci est un test envoyé avec yagmail."
 
     # Envoi
     yag.send(to=destinataire, subject=sujet, contents=message)
